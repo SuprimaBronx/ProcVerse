@@ -21,6 +21,7 @@ def out(file , container):
         file.write('мощность двигателя: ' + str(container[i].engine_power) + "\n")
     print('всё')
 
+
 def clear(cars):
     cars = []
     return cars

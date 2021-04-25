@@ -19,7 +19,9 @@ def out(file , container):
     for i in range(len(container)):
         out_cars(container[i], file, i)
         file.write('мощность двигателя: ' + str(container[i].engine_power) + "\n")
+        file.write('Отношение веса груза к мощности двигателя: ' + str(container[i].ratio) + "\n")
     print('всё')
+
 
 def clear(cars):
     cars = []

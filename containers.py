@@ -23,6 +23,13 @@ def out(file , container):
     print('всё')
 
 
+def sort(cars):
+    for i in range(len(cars) - 1):
+        for j in range(len(cars) - 1):
+            if cars[j].ratio > cars[j + 1].ratio:
+                cars[j], cars[j + 1] = cars[j + 1], cars[j]
+
+
 def clear(cars):
     cars = []
     return cars

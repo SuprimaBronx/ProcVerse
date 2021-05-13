@@ -4,12 +4,14 @@ class Bus:
     type = ""
     engine_power = 0
     passenger = 0
+    fuel_consumption = 0
 
 
 def in_bus(elem, line, cars):
     elem.type = 'bus'
     elem.engine_power = line[2]
     elem.passenger = line[1]
+    elem.fuel_consumption = line[3]
     cars.append(elem)
 
 

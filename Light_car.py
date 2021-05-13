@@ -9,6 +9,7 @@ def in_light_car(elem, line, cars):
     elem.type = 'light car'
     elem.engine_power = line[2]
     elem.max_speed = line[1]
+    elem.fuel_consumption = line[3]
     cars.append(elem)
 
 def display_light_car(file, i, cars):

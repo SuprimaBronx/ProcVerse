@@ -4,12 +4,14 @@ class Truck:
     type = ""
     engine_power = 0
     weight = 0
+    fuel_consumption = 0
 
 
 def in_truck(elem, line, cars):
     elem.type = 'truck'
     elem.engine_power = line[2]
     elem.weight = line[1]
+    elem.fuel_consumption = line[3]
     cars.append(elem)
 
 

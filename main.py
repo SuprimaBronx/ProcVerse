@@ -9,6 +9,7 @@ def main():
     in_data(file, container.cars)
     file.close()
     file = open(output_name, 'w')
+    sort(container.cars)
     out(file, container.cars)
     container.cars = clear(container.cars)
     out(file, container.cars)

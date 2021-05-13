@@ -31,6 +31,17 @@ def sort(cars):
                 cars[j], cars[j + 1] = cars[j + 1], cars[j]
 
 
+def out_filtr(file, cars):
+    file.write('Контейнер содержит ' + str(len(cars)) + ' элементов \n')
+    for i in range(len(cars)):
+        if cars[i].type == 'truck':
+            out_cars(cars[i], file, i)
+            file.write('мощность двигателя: ' + str(cars[i].engine_power) + "\n")
+            file.write('расход топлива: ' + str(cars[i].fuel_consumption) + "\n")
+            file.write('Отношение веса груза к мощности двигателя: ' + str(cars[i].ratio) + "\n")
+
+
+
 def clear(cars):
     cars = []
     return cars

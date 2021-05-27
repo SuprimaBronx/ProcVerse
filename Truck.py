@@ -26,4 +26,3 @@ def display_truck(file, i, cars):
 
 def ratio_calc(elem):
     elem.ratio = elem.global_weight / elem.engine_power
-

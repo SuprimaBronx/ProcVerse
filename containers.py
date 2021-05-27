@@ -14,7 +14,7 @@ def in_data(file_input, cars):
         in_cars(temp, cars)
 
 
-def out(file , container):
+def out(file, container):
     file.write('Контейнер содержит ' + str(len(container)) + ' элементов \n')
     for i in range(len(container)):
         out_cars(container[i], file, i)
@@ -39,7 +39,6 @@ def out_filtr(file, cars):
             file.write('мощность двигателя: ' + str(cars[i].engine_power) + "\n")
             file.write('расход топлива: ' + str(cars[i].fuel_consumption) + "\n")
             file.write('Отношение веса груза к мощности двигателя: ' + str(cars[i].ratio) + "\n")
-
 
 
 def clear(cars):

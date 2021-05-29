@@ -40,6 +40,21 @@ def out_filtr(file, cars):
             file.write('расход топлива: ' + str(cars[i].fuel_consumption) + "\n")
             file.write('Отношение веса груза к мощности двигателя: ' + str(cars[i].ratio) + "\n")
 
+def multimethods(cars, out_name):
+    objects = {
+        Truck: 'Truck',
+        Bus: 'Bus',
+        LightCar: 'Light car'
+    }
+    try:
+        for i in range(0, len(cars), 2):
+            res = ''
+            res += objects[type(cars[i])] + ' and ' + objects[type(cars[i + 1])]
+            out_name.write(res + '\n')
+    except:
+        out_name.write(objects[type(cars[-1])] + " alone :'( " + '\n')
+
+
 
 def clear(cars):
     cars = []

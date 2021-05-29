@@ -1,0 +1,5 @@
+Truck and Truck
+Bus and Truck
+Light car and Bus
+Truck and Bus
+Bus alone :'( 

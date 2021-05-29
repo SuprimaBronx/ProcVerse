@@ -27,10 +27,13 @@ def multimethods(cars, out_name):
         Truck: 'Truck',
         Bus: 'Bus'
     }
-    for i in range(0, len(cars), 2):
-        res = ''
-        res += objects[type(cars[i])] + ' and ' + objects[type(cars[i + 1])]
-        out_name.write(res + '\n')
+    try:
+        for i in range(0, len(cars), 2):
+            res = ''
+            res += objects[type(cars[i])] + ' and ' + objects[type(cars[i + 1])]
+            out_name.write(res + '\n')
+    except:
+        out_name.write(objects[type(cars[-1])] + " alone :'(" + '\n')
 
 
 def clear(cars):
